@@ -1,0 +1,25 @@
+Source: h8mail
+Section: misc
+Priority: optional
+Maintainer: Kali Developers <devel@kali.org> 
+Uploaders: Phunk <phunkpwnz@protonmail.com>, Jason Kregting <jason.kregting@tracelabs.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               python3-requests
+Standards-Version: 4.5.0                                                   
+Homepage: https://github.com/khast3x/h8mail/wiki                           
+Vcs-Browser: https://github.com/khast3x/h8mail
+Vcs-Git: https://github.com/khast3x/h8mail.git
+
+Package: h8mail
+Architecture: any
+Depends: ${python3:Depends}, 
+         ${misc:Depends},
+         python3-requests
+Description: This package includes an email open source intelligence and breach hunting tool
+ h8mail is an email OSINT and breach hunting
+ tool using different breach and reconnaissance services, 
+ or local breaches such as Troy Hunt's "Collection1" 
+ and the infamous "Breach Compilation" torrent.
